@@ -1,0 +1,33 @@
+name: Actualiza calendários .ics automaticamente
+
+on:
+  #push:
+  workflow_dispatch:
+  schedule:
+    - cron:  '5 0 * * *'
+
+jobs:
+  scheduled:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Check out this repo
+      uses: actions/checkout@v2
+    - name: Install curl
+      run: |-
+        apt-get update && apt-get -y install curl
+    - name: Install R packages
+      run: |-
+        Rscript -e "renv::restore()"
+    - name: Download and treat
+      run: |-
+        Rscript ecb_calendar.R
+    - name: Commit and push if it changed
+      run: |-
+        git config user.name "Automatic"
+        git config user.email "actions@users.noreply.github.com"
+        git add ecb_calendar.ics
+        timestamp=$(date -u)
+        git commit -m "Automatic update of ics calendar: ${timestamp}" || exit 0
+        git push
+
+    container: rocker/tidyverse:latest

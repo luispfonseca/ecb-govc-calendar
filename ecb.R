@@ -42,7 +42,7 @@ make_event <- function(date, summary) {
     paste0("SUMMARY:", summary),
     paste0("UID:ca6af7456b0088abad9a69f9f620f5ac-", date),
     "SEQUENCE:0",
-    "DTSTAMP:20210226T102803Z",
+    paste0("DTSTAMP:", paste0(format(Sys.Date(), "%Y%m%d"), "T", format(Sys.time(), "%H%M%S"), "Z")),
     "END:VEVENT"
   )
 }

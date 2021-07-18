@@ -1,4 +1,4 @@
-name: Actualiza calendários .ics automaticamente
+name: Updates ics calendar
 
 on:
   #push:
@@ -20,7 +20,7 @@ jobs:
         Rscript -e "renv::restore()"
     - name: Download and treat
       run: |-
-        Rscript ecb_calendar.R
+        Rscript ecb.R
     - name: Commit and push if it changed
       run: |-
         git config user.name "Automatic"

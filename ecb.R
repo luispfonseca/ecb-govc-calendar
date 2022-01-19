@@ -59,6 +59,8 @@ c(
 
 # add the events
 events %>% 
+  mutate(across(detail, str_replace, "Governing Council of the ECB: ", "ECB GovC: ")) %>% 
+  mutate(across(detail, str_replace, "General Council meeting of the ECB", "ECB General Council: meeting")) %>% 
   mutate(event = map2(date, detail, make_event)) %>% 
   select(event) %>% 
   unnest(event) %>% 

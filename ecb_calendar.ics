@@ -6,154 +6,154 @@ CALSCALE:GREGORIAN
 BEGIN:VEVENT
 DTEND;VALUE=DATE:20220204
 DTSTART;VALUE=DATE:20220203
-SUMMARY:Governing Council of the ECB: monetary policy meeting in Frankfurt
+SUMMARY:ECB GovC: monetary policy meeting in Frankfurt
 UID:ca6af7456b0088abad9a69f9f620f5ac-2022-02-03
 SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 DTEND;VALUE=DATE:20220217
 DTSTART;VALUE=DATE:20220216
-SUMMARY:Governing Council of the ECB: non-monetary policy meeting in Frankfurt
+SUMMARY:ECB GovC: non-monetary policy meeting in Frankfurt
 UID:ca6af7456b0088abad9a69f9f620f5ac-2022-02-16
 SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 DTEND;VALUE=DATE:20220311
 DTSTART;VALUE=DATE:20220310
-SUMMARY:Governing Council of the ECB: monetary policy meeting in Frankfurt
+SUMMARY:ECB GovC: monetary policy meeting in Frankfurt
 UID:ca6af7456b0088abad9a69f9f620f5ac-2022-03-10
 SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 DTEND;VALUE=DATE:20220324
 DTSTART;VALUE=DATE:20220323
-SUMMARY:Governing Council of the ECB: non-monetary policy meeting in Frankfurt
+SUMMARY:ECB GovC: non-monetary policy meeting in Frankfurt
 UID:ca6af7456b0088abad9a69f9f620f5ac-2022-03-23
 SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 DTEND;VALUE=DATE:20220325
 DTSTART;VALUE=DATE:20220324
-SUMMARY:General Council meeting of the ECB in Frankfurt
+SUMMARY:ECB General Council: meeting in Frankfurt
 UID:ca6af7456b0088abad9a69f9f620f5ac-2022-03-24
 SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 DTEND;VALUE=DATE:20220415
 DTSTART;VALUE=DATE:20220414
-SUMMARY:Governing Council of the ECB: monetary policy meeting in Frankfurt
+SUMMARY:ECB GovC: monetary policy meeting in Frankfurt
 UID:ca6af7456b0088abad9a69f9f620f5ac-2022-04-14
 SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 DTEND;VALUE=DATE:20220505
 DTSTART;VALUE=DATE:20220504
-SUMMARY:Governing Council of the ECB: non-monetary policy meeting in Frankfurt
+SUMMARY:ECB GovC: non-monetary policy meeting in Frankfurt
 UID:ca6af7456b0088abad9a69f9f620f5ac-2022-05-04
 SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 DTEND;VALUE=DATE:20220519
 DTSTART;VALUE=DATE:20220518
-SUMMARY:Governing Council of the ECB: non-monetary policy meeting in Frankfurt
+SUMMARY:ECB GovC: non-monetary policy meeting in Frankfurt
 UID:ca6af7456b0088abad9a69f9f620f5ac-2022-05-18
 SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 DTEND;VALUE=DATE:20220610
 DTSTART;VALUE=DATE:20220609
-SUMMARY:Governing Council of the ECB: monetary policy meeting in the Netherlands
+SUMMARY:ECB GovC: monetary policy meeting in the Netherlands
 UID:ca6af7456b0088abad9a69f9f620f5ac-2022-06-09
 SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 DTEND;VALUE=DATE:20220623
 DTSTART;VALUE=DATE:20220622
-SUMMARY:Governing Council of the ECB: non-monetary policy meeting in Frankfurt
+SUMMARY:ECB GovC: non-monetary policy meeting in Frankfurt
 UID:ca6af7456b0088abad9a69f9f620f5ac-2022-06-22
 SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 DTEND;VALUE=DATE:20220624
 DTSTART;VALUE=DATE:20220623
-SUMMARY:General Council meeting of the ECB in Frankfurt
+SUMMARY:ECB General Council: meeting in Frankfurt
 UID:ca6af7456b0088abad9a69f9f620f5ac-2022-06-23
 SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 DTEND;VALUE=DATE:20220707
 DTSTART;VALUE=DATE:20220706
-SUMMARY:Governing Council of the ECB: non-monetary policy meeting in Frankfurt
+SUMMARY:ECB GovC: non-monetary policy meeting in Frankfurt
 UID:ca6af7456b0088abad9a69f9f620f5ac-2022-07-06
 SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 DTEND;VALUE=DATE:20220722
 DTSTART;VALUE=DATE:20220721
-SUMMARY:Governing Council of the ECB: monetary policy meeting in Frankfurt
+SUMMARY:ECB GovC: monetary policy meeting in Frankfurt
 UID:ca6af7456b0088abad9a69f9f620f5ac-2022-07-21
 SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 DTEND;VALUE=DATE:20220909
 DTSTART;VALUE=DATE:20220908
-SUMMARY:Governing Council of the ECB: monetary policy meeting in Frankfurt
+SUMMARY:ECB GovC: monetary policy meeting in Frankfurt
 UID:ca6af7456b0088abad9a69f9f620f5ac-2022-09-08
 SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 DTEND;VALUE=DATE:20220922
 DTSTART;VALUE=DATE:20220921
-SUMMARY:Governing Council of the ECB: non-monetary policy meeting in Frankfurt
+SUMMARY:ECB GovC: non-monetary policy meeting in Frankfurt
 UID:ca6af7456b0088abad9a69f9f620f5ac-2022-09-21
 SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 DTEND;VALUE=DATE:20220923
 DTSTART;VALUE=DATE:20220922
-SUMMARY:General Council meeting of the ECB in Frankfurt
+SUMMARY:ECB General Council: meeting in Frankfurt
 UID:ca6af7456b0088abad9a69f9f620f5ac-2022-09-22
 SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 DTEND;VALUE=DATE:20221006
 DTSTART;VALUE=DATE:20221005
-SUMMARY:Governing Council of the ECB: non-monetary policy meeting in Frankfurt
+SUMMARY:ECB GovC: non-monetary policy meeting in Frankfurt
 UID:ca6af7456b0088abad9a69f9f620f5ac-2022-10-05
 SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 DTEND;VALUE=DATE:20221028
 DTSTART;VALUE=DATE:20221027
-SUMMARY:Governing Council of the ECB: monetary policy meeting in Frankfurt
+SUMMARY:ECB GovC: monetary policy meeting in Frankfurt
 UID:ca6af7456b0088abad9a69f9f620f5ac-2022-10-27
 SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 DTEND;VALUE=DATE:20221110
 DTSTART;VALUE=DATE:20221109
-SUMMARY:Governing Council of the ECB: non-monetary policy meeting in Frankfurt
+SUMMARY:ECB GovC: non-monetary policy meeting in Frankfurt
 UID:ca6af7456b0088abad9a69f9f620f5ac-2022-11-09
 SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 DTEND;VALUE=DATE:20221201
 DTSTART;VALUE=DATE:20221130
-SUMMARY:Governing Council of the ECB: non-monetary policy meeting in Frankfurt
+SUMMARY:ECB GovC: non-monetary policy meeting in Frankfurt
 UID:ca6af7456b0088abad9a69f9f620f5ac-2022-11-30
 SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 DTEND;VALUE=DATE:20221202
 DTSTART;VALUE=DATE:20221201
-SUMMARY:General Council meeting of the ECB in Frankfurt
+SUMMARY:ECB General Council: meeting in Frankfurt
 UID:ca6af7456b0088abad9a69f9f620f5ac-2022-12-01
 SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 DTEND;VALUE=DATE:20221216
 DTSTART;VALUE=DATE:20221215
-SUMMARY:Governing Council of the ECB: monetary policy meeting in Frankfurt
+SUMMARY:ECB GovC: monetary policy meeting in Frankfurt
 UID:ca6af7456b0088abad9a69f9f620f5ac-2022-12-15
 SEQUENCE:0
 END:VEVENT

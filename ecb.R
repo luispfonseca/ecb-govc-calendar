@@ -27,7 +27,9 @@ events <-
   mutate(date = lubridate::dmy(date)) %>% 
   select(-name) %>% 
   # delete the press conferences after the gov council meeting
-  filter(str_detect(detail, "Press conference following the Governing Council meeting", T))
+  filter(str_detect(detail, "Press conference following the Governing Council meeting", T)) %>% 
+  mutate(across(detail, str_replace, "Governing Council of the ECB: ", "ECB GovC: ")) %>% 
+  mutate(across(detail, str_replace, "General Council meeting of the ECB", "ECB General Council: meeting"))
 
 if (!length(events$date %>% unique()) == nrow(events)) {
   stop("More than one event in the same day; check to see if these can be merged.\nThis is because code is assuming only one event per day to generate the UIDs")
@@ -47,25 +49,31 @@ make_event <- function(date, summary) {
   )
 }
 
-# start the file
-c(
-  "BEGIN:VCALENDAR",
-  "VERSION:2.0",
-  "METHOD:PUBLISH",
-  "PRODID:PERSONALCALENDAR",
-  "CALSCALE:GREGORIAN"
-) %>% 
-  cat(file = "ecb_calendar.ics", sep = "\n")
+write_file <- function(events, path) {
+  c(
+    "BEGIN:VCALENDAR",
+    "VERSION:2.0",
+    "METHOD:PUBLISH",
+    "PRODID:PERSONALCALENDAR",
+    "CALSCALE:GREGORIAN"
+  ) %>% 
+    cat(file = file.path(path), sep = "\n")
+  
+  # add the events
+  events %>% 
+    mutate(event = map2(date, detail, make_event)) %>% 
+    select(event) %>% 
+    unnest(event) %>% 
+    pull(event) %>% 
+    cat(file = file.path(path), sep="\n", append = TRUE)
+  
+  # end the file
+  cat(c("END:VCALENDAR"), file = file.path(path), sep="\n", append = TRUE)
+}
 
-# add the events
+# write two versions: all and only monetary policy
+write_file(events, "ecb_calendar.ics")
+
 events %>% 
-  mutate(across(detail, str_replace, "Governing Council of the ECB: ", "ECB GovC: ")) %>% 
-  mutate(across(detail, str_replace, "General Council meeting of the ECB", "ECB General Council: meeting")) %>% 
-  mutate(event = map2(date, detail, make_event)) %>% 
-  select(event) %>% 
-  unnest(event) %>% 
-  pull(event) %>% 
-  cat(file = "ecb_calendar.ics", sep="\n", append = TRUE)
-
-# end the file
-cat(c("END:VCALENDAR"), file = "ecb_calendar.ics", sep="\n", append = TRUE)
+  filter(str_detect(detail, "monetary") & str_detect(detail, "non-monetary", T)) %>% 
+  write_file("ecb_calendar_mon_policy.ics")

@@ -72,8 +72,8 @@ write_file <- function(events, path) {
 }
 
 # write two versions: all and only monetary policy
-write_file(events, "ecb_calendar.ics")
+write_file(events, "docs/ecb_calendar.ics")
 
 events %>% 
   filter(str_detect(detail, "monetary") & str_detect(detail, "non-monetary", T)) %>% 
-  write_file("ecb_calendar_mon_policy.ics")
+  write_file("docs/ecb_calendar_mon_policy.ics")

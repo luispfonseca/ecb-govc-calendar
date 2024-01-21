@@ -75,5 +75,5 @@ write_file <- function(events, path) {
 write_file(events, "docs/ecb_calendar.ics")
 
 events %>% 
-  filter(str_detect(detail, "monetary") & str_detect(detail, "non-monetary", T)) %>% 
+  filter(str_detect(detail, regex("monetary", ignore_case = TRUE)) & str_detect(detail, regex("non-monetary", ignore_case = TRUE), TRUE)) %>% 
   write_file("docs/ecb_calendar_mon_policy.ics")

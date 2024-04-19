@@ -13,7 +13,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTEND;VALUE=DATE:20240523
 DTSTART;VALUE=DATE:20240522
-SUMMARY:ECB GovC: non-monetary policy meetinghosted by the Central Bank of Ireland
+SUMMARY:Governing Council retreat hosted by the Central Bank of Ireland
 UID:ca6af7456b0088abad9a69f9f620f5ac-2024-05-22
 SEQUENCE:0
 END:VEVENT

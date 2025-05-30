@@ -20,7 +20,7 @@ END:VEVENT
 BEGIN:VEVENT
 DTEND;VALUE=DATE:20250626
 DTSTART;VALUE=DATE:20250625
-SUMMARY:ECB GovC: non-monetary policy meeting in Frankfurt (virtual)
+SUMMARY:ECB GovC: non-monetary policy meeting (virtual)
 UID:ca6af7456b0088abad9a69f9f620f5ac-2025-06-25
 SEQUENCE:0
 END:VEVENT

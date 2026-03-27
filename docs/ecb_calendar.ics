@@ -6,14 +6,14 @@ CALSCALE:GREGORIAN
 BEGIN:VEVENT
 DTEND;VALUE=DATE:20260408
 DTSTART;VALUE=DATE:20260407
-SUMMARY:Governing Council retreat hosted by the Banque de France
+SUMMARY:Governing Council retreat hosted by the Banque de France (Day 1)
 UID:ca6af7456b0088abad9a69f9f620f5ac-2026-04-07
 SEQUENCE:0
 END:VEVENT
 BEGIN:VEVENT
 DTEND;VALUE=DATE:20260409
 DTSTART;VALUE=DATE:20260408
-SUMMARY:Governing Council retreat hosted by the Banque de France
+SUMMARY:Governing Council retreat hosted by the Banque de France (Day 2)
 UID:ca6af7456b0088abad9a69f9f620f5ac-2026-04-08
 SEQUENCE:0
 END:VEVENT

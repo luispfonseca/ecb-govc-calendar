@@ -28,8 +28,8 @@ events <-
   select(-name) %>% 
   # delete the press conferences after the gov council meeting
   filter(str_detect(detail, "Press conference following the Governing Council meeting", T)) %>% 
-  mutate(across(detail, str_replace, "Governing Council of the ECB: ", "ECB GovC: ")) %>% 
-  mutate(across(detail, str_replace, "General Council meeting of the ECB", "ECB General Council: meeting"))
+  mutate(across(detail, \(x) str_replace(x, "Governing Council of the ECB: ", "ECB GovC: "))) %>%
+  mutate(across(detail, \(x) str_replace(x, "General Council meeting of the ECB", "ECB General Council: meeting")))
 
 if (!length(events$date %>% unique()) == nrow(events)) {
   stop("More than one event in the same day; check to see if these can be merged.\nThis is because code is assuming only one event per day to generate the UIDs")

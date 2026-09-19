@@ -12,9 +12,10 @@ jobs:
     steps:
     - name: Check out this repo
       uses: actions/checkout@v7
-    - name: Install curl
+    - name: Install curl and refresh CA certificates
       run: |-
-        apt-get update && apt-get -y install curl
+        apt-get update && apt-get -y install curl ca-certificates
+        update-ca-certificates
     - name: Install R packages
       run: |-
         Rscript -e "renv::restore()"

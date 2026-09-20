@@ -4,23 +4,9 @@ METHOD:PUBLISH
 PRODID:PERSONALCALENDAR
 CALSCALE:GREGORIAN
 BEGIN:VEVENT
-DTEND;VALUE=DATE:20260910
-DTSTART;VALUE=DATE:20260909
-SUMMARY:ECB GovC: monetary policy meeting hosted by the Deutsche Bundesbank in Berlin, Germany (Day 1)
-UID:ca6af7456b0088abad9a69f9f620f5ac-2026-09-09
-SEQUENCE:0
-END:VEVENT
-BEGIN:VEVENT
-DTEND;VALUE=DATE:20260911
-DTSTART;VALUE=DATE:20260910
-SUMMARY:ECB GovC: monetary policy meeting hosted by the Deutsche Bundesbank in Berlin, Germany (Day 2), followed by press conference
-UID:ca6af7456b0088abad9a69f9f620f5ac-2026-09-10
-SEQUENCE:0
-END:VEVENT
-BEGIN:VEVENT
 DTEND;VALUE=DATE:20261001
 DTSTART;VALUE=DATE:20260930
-SUMMARY:ECB GovC: non-monetary policy meeting (virtual)
+SUMMARY:ECB GovC: non-monetary policy meeting (in Frankfurt)
 UID:ca6af7456b0088abad9a69f9f620f5ac-2026-09-30
 SEQUENCE:0
 END:VEVENT

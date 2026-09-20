@@ -12,13 +12,13 @@ jobs:
     steps:
     - name: Check out this repo
       uses: actions/checkout@v7
-    - name: Install curl and refresh CA certificates
+    - name: Refresh CA certificates
       run: |-
-        apt-get update && apt-get -y install curl ca-certificates
+        apt-get update && apt-get -y install ca-certificates
         update-ca-certificates
-    - name: Install R packages
+    - name: Install xml2
       run: |-
-        Rscript -e "renv::restore()"
+        Rscript -e 'if (!requireNamespace("xml2", quietly = TRUE)) install.packages("xml2")'
     - name: Download and treat
       run: |-
         Rscript ecb.R

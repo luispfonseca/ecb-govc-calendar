@@ -12,13 +12,13 @@ jobs:
     steps:
     - name: Check out this repo
       uses: actions/checkout@v7
-    - name: Refresh CA certificates
+    - name: Install system dependencies
       run: |-
-        apt-get update && apt-get -y install ca-certificates
+        apt-get update && apt-get -y install libxml2-dev ca-certificates
         update-ca-certificates
     - name: Install xml2
       run: |-
-        Rscript -e 'if (!requireNamespace("xml2", quietly = TRUE)) install.packages("xml2")'
+        Rscript -e 'install.packages("xml2")'
     - name: Download and treat
       run: |-
         Rscript ecb.R
@@ -32,4 +32,4 @@ jobs:
         git commit -m "Automatic update of ics calendar: ${timestamp}" || exit 0
         git push
 
-    container: rocker/tidyverse:4.3.0
+    container: rocker/r-ver:latest

@@ -10,11 +10,11 @@ jobs:
   scheduled:
     runs-on: ubuntu-latest
     steps:
-    - name: Check out this repo
-      uses: actions/checkout@v7
     - name: Install system dependencies
       run: |-
-        apt-get update && apt-get -y install libxml2-dev
+        apt-get update && apt-get -y install git libxml2-dev
+    - name: Check out this repo
+      uses: actions/checkout@v7
     - name: Install xml2
       run: |-
         . /etc/os-release
